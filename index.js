@@ -44,8 +44,8 @@ console.log(
 
 ////CLONE THE REPOSITORY
 
-const jsclone = spawnSync(`git`, [
-  "clone",
+const jsclone = spawnSync(`npx`, [
+  "degit",
   "https://github.com/AlexMercedCoder/componentzoo-template.git",
   name,
 ]);
@@ -63,6 +63,7 @@ console.log(
 - cd into project folder => ${name}
 - run command "npm install"
 - run command "npm run dev" and have fun developing
+- join the slack/discord channel at devNursery.com and join the community
 `
 );
 console.log(
